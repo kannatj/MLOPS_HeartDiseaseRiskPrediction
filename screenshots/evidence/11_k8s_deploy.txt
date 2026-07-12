@@ -1,0 +1,36 @@
+==================================================================
+ TASK 7 EVIDENCE — Deployed on local Kubernetes (k3d / k3s)
+ captured: Sat Jul 11 22:41:01 IST 2026
+==================================================================
+
+=== kubectl get nodes ===
+NAME                 STATUS   ROLES                  AGE    VERSION        INTERNAL-IP   EXTERNAL-IP   OS-IMAGE           KERNEL-VERSION   CONTAINER-RUNTIME
+k3d-heart-server-0   Ready    control-plane,master   5m1s   v1.30.4+k3s1   172.18.0.2    <none>        K3s v1.30.4+k3s1   6.6.51-0-virt    containerd://1.7.20-k3s1
+
+=== all resources in heart-disease namespace ===
+NAME                             READY   STATUS    RESTARTS   AGE
+pod/heart-api-85d57b7bb8-295hh   1/1     Running   0          3m27s
+pod/heart-api-85d57b7bb8-h5ndl   1/1     Running   0          3m27s
+
+NAME                TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)   AGE
+service/heart-api   ClusterIP   10.43.57.75   <none>        80/TCP    4m2s
+
+NAME                        READY   UP-TO-DATE   AVAILABLE   AGE
+deployment.apps/heart-api   2/2     2            2           3m27s
+
+NAME                                   DESIRED   CURRENT   READY   AGE
+replicaset.apps/heart-api-85d57b7bb8   2         2         2       3m27s
+
+NAME                                            REFERENCE              TARGETS       MINPODS   MAXPODS   REPLICAS   AGE
+horizontalpodautoscaler.autoscaling/heart-api   Deployment/heart-api   cpu: 1%/70%   2         5         2          3m27s
+
+=== ingress ===
+NAME        CLASS   HOSTS                 ADDRESS   PORTS   AGE
+heart-api   nginx   heart-api.localhost             80      3m28s
+
+=== deployment rollout ===
+deployment "heart-api" successfully rolled out
+
+=== pod describe (image + probes) ===
+heart-api-85d57b7bb8-295hh  image=heart-api:latest  status=Running
+heart-api-85d57b7bb8-h5ndl  image=heart-api:latest  status=Running

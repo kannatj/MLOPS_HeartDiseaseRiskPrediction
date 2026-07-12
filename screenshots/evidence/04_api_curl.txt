@@ -1,0 +1,39 @@
+=== GET /health ===
+{
+    "status": "ok",
+    "model_loaded": true,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z"
+}
+
+=== POST /predict (high risk sample) ===
+{
+    "prediction": 0,
+    "label": "no_disease",
+    "probability": 0.34082100218249445,
+    "confidence": 0.6591789978175056,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+    "threshold": 0.5
+}
+
+=== POST /predict (minimal fields, imputed) ===
+{
+    "prediction": 0,
+    "label": "no_disease",
+    "probability": 0.49183975982856365,
+    "confidence": 0.5081602401714364,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+    "threshold": 0.5
+}
+
+=== POST /predict (bad input -> 422) ===
+HTTP 422
+
+=== GET /metrics (prometheus, grep heart) ===
+# HELP heart_predictions_total Total number of predictions served, labeled by outcome
+# TYPE heart_predictions_total counter
+heart_predictions_total{label="no_disease"} 2.0
+# HELP http_requests_total Total number of requests by method, status and handler.
+# TYPE http_requests_total counter
+http_requests_total{handler="/health",method="GET",status="2xx"} 1.0
+http_requests_total{handler="/predict",method="POST",status="2xx"} 2.0
+http_requests_total{handler="/predict",method="POST",status="4xx"} 1.0

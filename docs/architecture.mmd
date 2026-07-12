@@ -1,0 +1,45 @@
+flowchart LR
+    subgraph Dev["Local Development"]
+        DS[(heart_disease_uci.csv)]
+        NB[Jupyter Notebooks<br/>EDA + Modelling]
+        SRC[src/<br/>preprocessing · train · api]
+    end
+
+    subgraph Track["Experiment Tracking"]
+        MLF[(MLflow<br/>./mlruns)]
+    end
+
+    subgraph CI["CI/CD (GitHub Actions)"]
+        LINT[ruff]
+        TEST[pytest + coverage]
+        SMOKE[smoke train]
+        DBUILD[Docker build]
+    end
+
+    subgraph Pkg["Packaging"]
+        MODEL[[heart_model.joblib]]
+        IMG[[heart-api:latest]]
+    end
+
+    subgraph Runtime["Runtime — Kubernetes"]
+        DEP[Deployment · 2 replicas]
+        SVC[Service ClusterIP]
+        ING[Ingress heart-api.localhost]
+        HPA[HorizontalPodAutoscaler]
+    end
+
+    subgraph Obs["Observability"]
+        PROM[(Prometheus)]
+        GRAF[(Grafana dashboard)]
+    end
+
+    DS --> NB --> SRC
+    SRC --> MLF
+    SRC --> MODEL
+    SRC --> IMG
+
+    LINT --> TEST --> SMOKE --> DBUILD --> IMG
+
+    IMG --> DEP --> SVC --> ING
+    DEP --> HPA
+    DEP -->|/metrics| PROM --> GRAF

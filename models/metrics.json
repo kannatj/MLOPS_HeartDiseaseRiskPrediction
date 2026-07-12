@@ -1,0 +1,58 @@
+{
+  "best_model": "random_forest",
+  "best_roc_auc": 0.9287422285987567,
+  "candidates": {
+    "logistic_regression": {
+      "best_params": {
+        "C": 1.0,
+        "penalty": "l2"
+      },
+      "metrics": {
+        "accuracy": 0.8478260869565217,
+        "precision": 0.8303571428571429,
+        "recall": 0.9117647058823529,
+        "f1": 0.8691588785046729,
+        "roc_auc": 0.917503586800574,
+        "average_precision": 0.8956206272015113,
+        "cv_roc_auc": 0.8920976704716541
+      },
+      "model_path": "/Users/k0j089g/BITS/Assignment/MLOPS/models/logistic_regression.joblib"
+    },
+    "random_forest": {
+      "best_params": {
+        "max_depth": 8,
+        "min_samples_split": 2,
+        "n_estimators": 100
+      },
+      "metrics": {
+        "accuracy": 0.8478260869565217,
+        "precision": 0.8245614035087719,
+        "recall": 0.9215686274509803,
+        "f1": 0.8703703703703703,
+        "roc_auc": 0.9287422285987567,
+        "average_precision": 0.931064985678602,
+        "cv_roc_auc": 0.8873851010978381
+      },
+      "model_path": "/Users/k0j089g/BITS/Assignment/MLOPS/models/random_forest.joblib"
+    },
+    "xgboost": {
+      "best_params": {
+        "learning_rate": 0.1,
+        "max_depth": 4,
+        "n_estimators": 200,
+        "subsample": 0.9
+      },
+      "metrics": {
+        "accuracy": 0.842391304347826,
+        "precision": 0.8411214953271028,
+        "recall": 0.8823529411764706,
+        "f1": 0.861244019138756,
+        "roc_auc": 0.9025585844093734,
+        "average_precision": 0.9100359097907974,
+        "cv_roc_auc": 0.8594797042764523
+      },
+      "model_path": "/Users/k0j089g/BITS/Assignment/MLOPS/models/xgboost.joblib"
+    }
+  },
+  "generated_at": "2026-07-11T14:10:21.676783Z"
+}

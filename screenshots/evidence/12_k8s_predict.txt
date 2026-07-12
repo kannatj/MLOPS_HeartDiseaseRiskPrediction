@@ -1,0 +1,25 @@
+==================================================================
+ TASK 7 EVIDENCE — Live inference through K8s Service (port-forward)
+==================================================================
+
+=== GET /health (via svc/heart-api :80) ===
+{
+    "status": "ok",
+    "model_loaded": true,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z"
+}
+
+=== POST /predict (via K8s service) ===
+{
+    "prediction": 0,
+    "label": "no_disease",
+    "probability": 0.34082100218249445,
+    "confidence": 0.6591789978175056,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+    "threshold": 0.5
+}
+
+=== GET /metrics (heart_predictions_total) ===
+# HELP heart_predictions_total Total number of predictions served, labeled by outcome
+# TYPE heart_predictions_total counter
+heart_predictions_total{label="no_disease"} 2.0

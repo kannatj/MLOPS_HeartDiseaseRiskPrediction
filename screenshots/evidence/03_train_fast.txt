@@ -1,0 +1,118 @@
+2026-07-11 19:40:02,839 | INFO    | train | Loading dataset from /Users/k0j089g/BITS/Assignment/MLOPS/data/raw/heart_disease_uci.csv
+2026-07-11 19:40:02,842 | INFO    | train | Dataset shape: X=(920, 14)  y=(920,) (positives=509)
+2026-07-11 19:40:03,245 | INFO    | train | [logistic_regression] running GridSearchCV over 2 params
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+2026/07/11 19:40:14 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026-07-11 19:40:15,017 | INFO    | train | [logistic_regression] cv_auc=0.8921  test_auc=0.9175  acc=0.8478  f1=0.8692
+2026-07-11 19:40:15,210 | INFO    | train | [random_forest] running GridSearchCV over 2 params
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+2026/07/11 19:40:18 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026-07-11 19:40:18,995 | INFO    | train | [random_forest] cv_auc=0.8874  test_auc=0.9287  acc=0.8478  f1=0.8704
+2026-07-11 19:40:19,028 | INFO    | train | [xgboost] running GridSearchCV over 1 params
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+/Users/k0j089g/BITS/Assignment/MLOPS/.venv/lib/python3.10/site-packages/sklearn/impute/_base.py:598: UserWarning: Skipping features without any observed values: ['fbs' 'exang']. At least one non-missing value is needed for imputation with strategy='most_frequent'.
+  warnings.warn(
+2026/07/11 19:40:21 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+2026-07-11 19:40:21,657 | INFO    | train | [xgboost] cv_auc=0.8595  test_auc=0.9026  acc=0.8424  f1=0.8612
+2026-07-11 19:40:21,676 | INFO    | train | Best model = random_forest (roc_auc=0.9287) -> /Users/k0j089g/BITS/Assignment/MLOPS/models/heart_model.joblib
+2026-07-11 19:40:21,677 | INFO    | train | Wrote summary metrics -> /Users/k0j089g/BITS/Assignment/MLOPS/models/metrics.json
+2026/07/11 19:40:23 WARNING mlflow.models.model: Model logged without a signature and input example. Please set `input_example` parameter when logging the model to auto infer the model signature.
+{
+  "best_model": "random_forest",
+  "best_roc_auc": 0.9287422285987567
+}

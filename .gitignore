@@ -1,0 +1,72 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# MLflow / experiments
+mlruns/
+mlartifacts/
+!mlruns/.gitkeep
+
+# Models / data outputs (keep raw dataset committed)
+models/*.joblib
+models/*.pkl
+models/*.onnx
+!models/.gitkeep
+data/processed/
+reports/figures/*.png
+!reports/figures/.gitkeep
+
+# Logs
+*.log
+logs/
+
+# Coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Docker
+*.pid
+
+# Report artifacts
+docs/*.pdf
+!docs/report.md

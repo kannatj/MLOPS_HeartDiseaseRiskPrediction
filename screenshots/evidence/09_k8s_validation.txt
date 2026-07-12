@@ -1,0 +1,15 @@
+=== YAML structural validation of k8s/ manifests ===
+  OK  k8s/deployment.yaml      -> apps/v1                          Deployment
+  OK  k8s/hpa.yaml             -> autoscaling/v2                   HorizontalPodAutoscaler
+  OK  k8s/ingress.yaml         -> networking.k8s.io/v1             Ingress
+  OK  k8s/namespace.yaml       -> v1                               Namespace
+  OK  k8s/service.yaml         -> v1                               Service
+ALL VALID
+
+=== helm available? ===
+v3.16.1+g5a5449d
+
+=== helm chart YAML validation ===
+  OK  helm/heart-api/Chart.yaml
+  (template - jinja/go-tmpl, skipping strict parse) helm/heart-api/templates/deployment.yaml
+  OK  helm/heart-api/values.yaml

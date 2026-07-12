@@ -1,0 +1,67 @@
+==================================================================
+ TASK 6 EVIDENCE — Dockerized API in isolated container
+ image: heart-api:latest (da8a66e188bf)  captured: Sat Jul 11 20:34:50 IST 2026
+==================================================================
+
+=== docker images ===
+REPOSITORY                                          TAG         IMAGE ID       CREATED          SIZE
+heart-api                                           latest      da8a66e188bf   2 minutes ago    989MB
+
+=== docker ps (running container) ===
+NAMES       IMAGE              STATUS                             PORTS
+heart-api   heart-api:latest   Up 15 seconds (health: starting)   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp
+
+=== GET /health (from container) ===
+{
+    "status": "ok",
+    "model_loaded": true,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z"
+}
+
+=== POST /predict — sample patient ===
+{
+    "prediction": 0,
+    "label": "no_disease",
+    "probability": 0.34082100218249445,
+    "confidence": 0.6591789978175056,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+    "threshold": 0.5
+}
+
+=== POST /predict — minimal (imputed) ===
+{
+    "prediction": 0,
+    "label": "no_disease",
+    "probability": 0.4818992836380875,
+    "confidence": 0.5181007163619125,
+    "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+    "threshold": 0.5
+}
+
+=== POST /predict/batch — 2 patients ===
+{
+    "predictions": [
+        {
+            "prediction": 0,
+            "label": "no_disease",
+            "probability": 0.34082100218249445,
+            "confidence": 0.6591789978175056,
+            "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+            "threshold": 0.5
+        },
+        {
+            "prediction": 0,
+            "label": "no_disease",
+            "probability": 0.4818992836380875,
+            "confidence": 0.5181007163619125,
+            "model_version": "random_forest@2026-07-11T14:10:21.676783Z",
+            "threshold": 0.5
+        }
+    ],
+    "count": 2
+}
+
+=== GET /metrics (prometheus, heart_predictions) ===
+# HELP heart_predictions_total Total number of predictions served, labeled by outcome
+# TYPE heart_predictions_total counter
+heart_predictions_total{label="no_disease"} 6.0

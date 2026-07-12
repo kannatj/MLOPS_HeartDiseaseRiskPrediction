@@ -1,0 +1,15 @@
+=== DOCKER BUILD (successful) ===
+Command: DOCKER_BUILDKIT=0 docker build --network=host -f docker/Dockerfile -t heart-api:latest .
+
+Step 18/18 : CMD ["uvicorn", "src.api.main:app", "--host", "0.0.0.0", "--port", "8000"]
+ ---> Running in 1c6fba28a586
+ ---> Removed intermediate container 1c6fba28a586
+ ---> da8a66e188bf
+Successfully built da8a66e188bf
+Successfully tagged heart-api:latest
+
+$ docker images | grep heart-api
+heart-api    latest    da8a66e188bf   20 seconds ago   989MB
+
+Note: build performed off-VPN for network speed; multi-stage build
+(builder + slim runtime), 18 stages, all completed successfully.

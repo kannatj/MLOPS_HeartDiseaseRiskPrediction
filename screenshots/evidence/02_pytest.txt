@@ -1,0 +1,17 @@
+................                                                         [100%]
+
+--------- coverage: platform darwin, python 3.10.13-final-0 ----------
+Name                        Stmts   Miss  Cover
+-----------------------------------------------
+src/__init__.py                 0      0   100%
+src/api/__init__.py             0      0   100%
+src/api/main.py               111     11    90%
+src/api/schemas.py             32      0   100%
+src/config.py                  24      0   100%
+src/data_preprocessing.py      39      2    95%
+src/evaluate.py                39      3    92%
+src/train.py                  102    102     0%
+-----------------------------------------------
+TOTAL                         347    118    66%
+
+16 passed in 1.59s

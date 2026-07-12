@@ -1,0 +1,30 @@
+==================================================================
+ TASK 8 EVIDENCE — Logging + Monitoring (Prometheus + Grafana)
+ captured: Sun Jul 12 19:30:26 IST 2026
+==================================================================
+
+=== docker compose ps (API + Prometheus + Grafana) ===
+NAME               IMAGE                     COMMAND                  SERVICE      CREATED         STATUS                   PORTS
+heart-api          heart-api:latest          "uvicorn src.api.mai…"   api          9 minutes ago   Up 9 minutes (healthy)   0.0.0.0:8000->8000/tcp, :::8000->8000/tcp
+heart-grafana      grafana/grafana:11.2.2    "/run.sh"                grafana      9 minutes ago   Up 9 minutes             0.0.0.0:3000->3000/tcp, :::3000->3000/tcp
+heart-prometheus   prom/prometheus:v2.53.2   "/bin/prometheus --c…"   prometheus   9 minutes ago   Up 9 minutes             0.0.0.0:9090->9090/tcp, :::9090->9090/tcp
+
+=== Prometheus target health ===
+  heart-api -> up @ http://api:8000/metrics
+  prometheus -> up @ http://localhost:9090/metrics
+
+=== PromQL: total predictions ===
+  total = 215
+=== PromQL: predictions by label ===
+   no_disease = 125
+   disease = 90
+=== PromQL: p95 /predict latency (seconds) ===
+  p95 = 0.02434253246753247
+=== PromQL: HTTP requests by status ===
+  status 2xx = 285
+  status 4xx = 8
+
+=== Grafana datasource health (Save & test equivalent) ===
+  name= Prometheus uid= prometheus type= prometheus url= http://prometheus:9090
+=== Grafana provisioned dashboard ===
+  title= Heart Disease API uid= heart-api url=http://localhost:3000/d/heart-api/heart-disease-api

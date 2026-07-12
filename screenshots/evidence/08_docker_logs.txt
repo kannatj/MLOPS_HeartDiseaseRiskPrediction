@@ -1,0 +1,4 @@
+=== container logs (request logging inside Docker) ===
+2026-07-11 15:04:36,151 | INFO    | heart-api | Loading model from /app/models/heart_model.joblib
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)

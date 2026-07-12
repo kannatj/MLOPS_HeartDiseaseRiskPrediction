@@ -1,0 +1,35 @@
+==================================================================
+ TASK 8 EVIDENCE (part 2) — Structured API request logging
+ captured: Sun Jul 12 19:30:43 IST 2026
+==================================================================
+
+=== sample of API request logs from the running container ===
+heart-api  | INFO:     172.21.0.1:42146 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+heart-api  | INFO:     172.21.0.1:42158 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+heart-api  | 2026-07-12 13:59:49,662 | INFO    | heart-api | request path=/predict method=POST status=422 duration_ms=0.28 client=172.21.0.1
+heart-api  | INFO:     172.21.0.1:42166 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+heart-api  | 2026-07-12 13:59:49,673 | INFO    | heart-api | request path=/predict method=POST status=422 duration_ms=0.27 client=172.21.0.1
+heart-api  | INFO:     172.21.0.1:42182 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+heart-api  | 2026-07-12 13:59:49,682 | INFO    | heart-api | request path=/predict method=POST status=422 duration_ms=0.33 client=172.21.0.1
+heart-api  | INFO:     172.21.0.1:42184 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+heart-api  | 2026-07-12 13:59:49,692 | INFO    | heart-api | request path=/predict method=POST status=422 duration_ms=0.24 client=172.21.0.1
+heart-api  | INFO:     172.21.0.1:42190 - "POST /predict HTTP/1.1" 422 Unprocessable Entity
+heart-api  | 2026-07-12 13:59:49,701 | INFO    | heart-api | request path=/predict method=POST status=422 duration_ms=0.22 client=172.21.0.1
+heart-api  | 2026-07-12 13:59:52,801 | INFO    | heart-api | request path=/metrics method=GET status=200 duration_ms=0.81 client=172.21.0.3
+heart-api  | INFO:     172.21.0.3:38572 - "GET /metrics HTTP/1.1" 200 OK
+heart-api  | 2026-07-12 14:00:04,207 | INFO    | heart-api | request path=/health method=GET status=200 duration_ms=0.57 client=127.0.0.1
+heart-api  | INFO:     127.0.0.1:34926 - "GET /health HTTP/1.1" 200 OK
+heart-api  | 2026-07-12 14:00:07,805 | INFO    | heart-api | request path=/metrics method=GET status=200 duration_ms=0.74 client=172.21.0.3
+heart-api  | INFO:     172.21.0.3:47714 - "GET /metrics HTTP/1.1" 200 OK
+heart-api  | 2026-07-12 14:00:19,279 | INFO    | heart-api | request path=/health method=GET status=200 duration_ms=0.46 client=127.0.0.1
+heart-api  | INFO:     127.0.0.1:44818 - "GET /health HTTP/1.1" 200 OK
+heart-api  | INFO:     172.21.0.3:49108 - "GET /metrics HTTP/1.1" 200 OK
+heart-api  | 2026-07-12 14:00:22,801 | INFO    | heart-api | request path=/metrics method=GET status=200 duration_ms=0.76 client=172.21.0.3
+heart-api  | INFO:     127.0.0.1:36142 - "GET /health HTTP/1.1" 200 OK
+heart-api  | 2026-07-12 14:00:34,349 | INFO    | heart-api | request path=/health method=GET status=200 duration_ms=0.40 client=127.0.0.1
+heart-api  | INFO:     172.21.0.3:59934 - "GET /metrics HTTP/1.1" 200 OK
+heart-api  | 2026-07-12 14:00:37,800 | INFO    | heart-api | request path=/metrics method=GET status=200 duration_ms=0.99 client=172.21.0.3
+
+=== log line count (proves every request is logged) ===
+-n   total request log lines: 
+296

@@ -3,8 +3,8 @@
 **Course:** AIMLCZG523 · Machine Learning Operations
 **Author:** Kanna TJ (2024ad05219@wilp.bits-pilani.ac.in)
 **Repository:** https://github.com/kannatj/MLOPS_HeartDiseaseRiskPrediction
-**Deployed API:** Local only — Docker Compose (`:8000`) or local Kubernetes; run/access instructions in §2, §8, §9
-**Video walkthrough:** &lt;link to short recording&gt;
+**Deployed API:** Local only — Docker Compose (`:8000`) or local Kubernetes; run/access instructions in Section 2, Section 8, Section 9
+**Video walkthrough:** [Google Drive recording](https://drive.google.com/file/d/1qjICf70Oy9uqdeHjkB8t8By39OI_V1f0/view?usp=sharing) — *Access restricted: only members of BITS Pilani can view this recording.*
 
 ---
 
@@ -277,7 +277,7 @@ with any Mermaid renderer (e.g. `npx @mermaid-js/mermaid-cli -i docs/architectur
 - [x] Kubernetes manifests + Helm chart
 - [x] `screenshots/evidence/` folder (Swagger, MLflow, Prometheus, Grafana + text logs)
 - [ ] Final written report (this document, exported to DOCX/PDF)
-- [x] API access instructions (local — §2, §8, §9)
+- [x] API access instructions (local — Section 2, Section 8, Section 9)
 - [ ] Short video recording of the pipeline
 
 ## 13. Academic integrity statement

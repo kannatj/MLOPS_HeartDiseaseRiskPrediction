@@ -70,4 +70,6 @@ htmlcov/
 
 # Report artifacts
 docs/*.pdf
+!docs/report.pdf
+docs/report.html
 !docs/report.md

@@ -53,6 +53,13 @@ Common tasks:
 | Local monitoring stack | `make compose-up` (Grafana `:3000`, Prometheus `:9090`) |
 | Kubernetes | `kubectl apply -f k8s/` |
 
+The project is published as a public GitHub repository:
+
+![GitHub repository](../screenshots/evidence/github/1_GitHub_Repository.png)
+
+*Figure: repository root — code, notebooks, Docker, Helm, k8s, monitoring, tests and
+CI workflow, with the language breakdown (Python, Jupyter, Shell, Dockerfile).*
+
 ## 3. EDA findings
 
 *See `notebooks/01_eda.ipynb` and `reports/figures/`.*
@@ -155,9 +162,16 @@ Screenshots (captured from the live MLflow UI, `screenshots/evidence/ui/`):
    the container, probes `/health` and posts a sample payload to `/predict`.
 
 The pipeline fails hard on lint errors, test failures, training errors, or a
-non-200 response from the containerised API. The GitHub Actions run screenshot
-(`screenshots/evidence/ui/github_actions_pipeline.png`) is captured after the first
-push to GitHub, once a workflow run is available.
+non-200 response from the containerised API.
+
+![GitHub Actions CI checks](../screenshots/evidence/github/4_GitHub_CICD.png)
+
+*Figure: GitHub Actions on push to `main` — "Lint, test, and smoke-train" succeeded,
+"Build Docker image" job running.*
+
+![GitHub Actions Docker build job](../screenshots/evidence/github/5_GitHub_DockerImageBuild.png)
+
+*Figure: the `docker-build` job building the image and smoke-testing the container in CI.*
 
 ## 8. Containerisation
 
@@ -180,6 +194,12 @@ Proof of a working isolated build/run is captured in
 `08_docker_logs.txt`. The interactive Swagger UI served by the container:
 
 ![Swagger UI served by the container](../screenshots/evidence/ui/swagger_docs.png)
+
+*Figure: interactive Swagger UI (`/docs`) served directly by the container.*
+
+![Sample /predict call](../screenshots/evidence/github/3_GitHub_PredictCall.png)
+
+*Figure: a sample `/predict` request/response against the running API.*
 
 ## 9. Kubernetes deployment (Docker Desktop)
 
@@ -230,6 +250,10 @@ latency and HTTP status codes.*
 ![Prometheus targets](../screenshots/evidence/ui/prometheus_targets.png)
 
 *Figure: Prometheus scraping the API `/metrics` endpoint (target UP).*
+
+![Prometheus graph — predictions counter](../screenshots/evidence/ui/prometheus_graph.png)
+
+*Figure: `heart_predictions_total` plotted in the Prometheus expression browser.*
 
 Raw metric/logging evidence: `screenshots/evidence/13_monitoring.txt` (PromQL query
 results) and `screenshots/evidence/14_request_logging.txt` (structured request logs).

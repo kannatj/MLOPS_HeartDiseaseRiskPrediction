@@ -1,0 +1,14 @@
+{
+  "// note": "Helm chart templates are Go templates, not plain YAML. Map them to the 'helm' language so the YAML linter stops flagging '{{ ... }}' as errors. Real validation is done by `helm lint` / `helm template`.",
+  "files.associations": {
+    "**/helm/**/templates/**/*.yaml": "helm",
+    "**/helm/**/templates/**/*.yml": "helm",
+    "**/helm/**/templates/**/*.tpl": "helm"
+  },
+  "yaml.validate": true,
+  "yaml.schemas": {
+    "kubernetes": [
+      "k8s/*.yaml"
+    ]
+  }
+}
